@@ -1,0 +1,143 @@
+#
+# Traducción al español del software alza usado en mythMC
+# Autor(a): U8092
+# Contacto: uisl8092@gmail.com o @u8092 en Discord
+# Notas:
+#   * Los mensajes sin usar están por si fueran necesarios en el futuro.
+#
+
+# Chat
+#   {0} = nombre del jugador
+#   {1} = mensaje
+#
+chat.hover.sender=Haz clic aquí para ver las estadísticas de {0}.
+chat.hover.local=Este es el canal {0}, que se usa para chatear con los jugadores de {1}.
+chat.hover.global=Este es el canal {0}, que se usa para hablar con todos los jugadores en línea.
+chat.hover.clan=Este es el canal del {0}, que se usa para hablar con todos los miembros de {1}.
+
+# Canales del chat
+chat.channel.switch=Ahora estás hablando en el canal {0}.
+
+# Mensajes privados
+#   {0} = nombre del jugador que envía el mensaje
+#   {1} = nombre del jugador que recibe el mensaje
+#   {2} = mensaje
+#
+pm.hover.sender=Haz clic aquí para escribir un mensaje privado a {0}.
+pm.hover.recipient=Haz clic aquí para escribir un mensaje privado a {0}.
+pm.hover.description=Este es un mensaje privado que solo {0} y {1} podéis leer.
+
+# Notificaciones
+global.notifications.playtime=¡Has acumulado {0} horas de juego!
+
+# Avisos
+global.warnings.experimental-feature=Esta acción no está suficientemente probada como para ser usada en un entorno de producción.
+global.warnings.clan-is-full=El clan ha alcanzado el límite de miembros, no podrá unirse nadie a menos que algún miembro lo abandone.
+global.warnings.cannot-be-undone=Esta acción es irreversible.
+
+# Errores frecuentes
+global.errors.player-not-found=No se pudo encontrar a {0} en la base de datos.
+global.errors.not-enough-permission=No tienes suficiente permiso.
+
+# Errores (clan)
+global.errors.player-has-clan=Ya perteneces a un clan. Puedes abandonarlo con /clan leave.
+global.errors.player-not-in-clan=No perteneces a ningún clan.
+global.errors.clan-already-exists=El clan {0} ya existe.
+global.errors.clan-not-found=El clan {0} no existe en la base de datos.
+global.errors.clan-is-full=El clan {0} está lleno.
+global.errors.player-must-be-leader=Debes ser líder del clan.
+global.errors.leader-cannot-leave=No puedes abandonar el clan. Primero deberás transferir el liderazgo a otra persona o, directamente, disolver el clan.
+global.errors.player-not-in-this-clan=El jugador {0} no pertenece al clan.
+global.errors.clan-tag-too-long=La etiqueta es demasiado larga.
+global.errors.clan-name-too-long=El nombre puede contener 16 caracteres como máximo.
+global.errors.player-is-already-leader=Ya eres líder.
+
+# Recompensas
+global.rewards.playtime=Has estado jugando por {0} minutos. Te hemos recompensado con {1} mitaritas.
+global.rewards.playtime.referral={0}, la persona que te invitó, ha recibido también {1} mitaritas. ¡Invita a tus amigos y gana recompensas!
+
+# Comandos de administración
+global.commands.extensions=Extensiones ({0}): {1}
+global.commands.reload.success=El archivo de configuración ha sido recargado.
+global.commands.save.success=Las instancias en caché se han guardado al almacenamiento local.
+
+# Debug para jugadores
+global.commands.serverinfo=Protocolo {0} ({1} - {2}). Esta instancia lleva {3} días, {4} horas, {5} minutos y {6} segundos en marcha.
+
+# Comandos (economía)
+global.commands.mytharites.add.success=Se ha(n) sumado {0} mitarita(s) a {1}.
+global.commands.mytharites.remove.success=Se ha(n) restado {0} mitarita(s) a {1}.
+global.commands.mytharites.check.self=Tienes un total de {0} mitarita(s).
+global.commands.mytharites.check.other={0} tiene un total de {1} mitarita(s).
+
+# Comandos (clanes)
+global.commands.clan.help=¿Necesitas ayuda con los comandos? ¡Únete a nuestro Discord con '/discord'!
+global.commands.clan.members=Los miembros de {0} son: {1}
+global.commands.clan.create.success=¡Enhorabuena, has creado {0}, tu propio clan! Puedes ver el código de invitación con '/clan stats'.
+global.commands.clan.join.success=Ahora formas parte del clan {0}. ¡Escribe con un . delante de tus mensajes y date a conocer al resto del clan!
+global.commands.clan.resetCode.success=Puedes ver el nuevo código de invitación usando el comando '/clan stats'.
+global.commands.clan.kick.success=Has echado a {0} del clan. Recuerda que podrá volver a unirse si no reseteas el código de invitación.
+global.commands.clan.tag.success=Se ha cambiado la etiqueta del clan a {0}.
+global.commands.clan.leave.success=Has abandonado el clan {0}.
+global.commands.clan.disband.help=Escribe '/clan disband {0}' si deseas disolver el clan. Todas las estadísticas se eliminarán.
+global.commands.clan.disband.success=El clan {0} se ha disuelto.
+global.commands.clan.leader.success=El nuevo líder de {0} es {1}.
+
+# Comandos (estadísticas del clan)
+global.commands.clan.stats.leader= ... es liderado por {0}.
+global.commands.clan.stats.members= ... cuenta con {0} miembro(s).
+global.commands.clan.stats.xp= ... tiene {0} puntos de experiencia acumulados.
+global.commands.clan.stats.established= ... se estableció el {0} por {1}.
+global.commands.clan.stats.extraFeatures= ... cuenta con la expansión de myth+.
+global.commands.clan.stats.inviteCode=Los otros jugadores pueden unirse usando el comando '/clan join {0}'.
+
+# Comandos (estadísticas de clanes globales)
+global.commands.clan.stats.global.topXp=El clan con más puntos de experiencia es {0}{1}, liderado por {2}, con un total de {3} puntos.
+global.commands.clan.stats.global.topKills=El clan con mayor número de asesinatos es {0}{1}, liderado por {2}, con un total de {3} asesinatos.
+global.commands.clan.stats.global.topDeaths=El clan con mayor número de muertes es {0}{1}, liderado por {2}, con un total de {3} asesinatos.
+global.commands.clan.stats.global.topXp.playerClan=Tu clan se encuentra en la posición número {0} con {1} puntos.
+global.commands.clan.stats.global.topKills.playerClan=Tu clan se encuentra en la posición número {0} con {1} asesinatos.
+global.commands.clan.stats.global.topDeaths.playerClan=Tu clan se encuentra en la posición número {0} con {1} muertes.
+
+# Comandos (estadísticas)
+global.commands.playtime=Llevas un total de {0} día(s), {1} hora(s), {2} minuto(s) y {3} segundo(s) de juego.
+global.commands.info.firstJoin= ... entró por primera vez el {0}.
+global.commands.info.lastJoin= ... entró por última vez el {0}.
+global.commands.info.playTime= ... ha jugado por {0} día(s), {1} hora(s), {2} minuto(s) y {3} segundo(s).
+global.commands.info.kdr= ... tiene un KDR de {0} ({1} asesinatos y {2} muertes)
+global.commands.info.clan= ... pertenece al clan {0}.
+
+# Comandos (sistema de referidos)
+global.commands.referral.help=Uso correcto: /referral <nombre de usuario>
+global.commands.referral.already-referred=Ya has usado el programa de referidos anteriormente.
+global.commands.referral.success=¡Gracias por contarnos quién te invitó! Esperamos que lo pases bien aquí, {0} ;-)
+global.commands.referral.failure=Buen intento.
+
+# Comandos (API)
+global.commands.api.help=Visita https://wiki.mythmc.ovh/desarrolladores si necesitas ayuda.
+global.commands.api.key.limit-reached=Has alcanzado el límite de claves para la API. Puedes ver la(s) que tienes con el comando /api key list.
+global.commands.api.key.banned=Has sido baneado de usar la API. Contacta con un administrador si crees que esto se trata de un error.
+global.commands.api.key.add.success=Se ha agregado una nueva clave a nombre de {0}.
+global.commands.api.key.revoke.all.success=Se han eliminado todas las claves a nombre de {0}.
+global.commands.api.key.revoke.success=Se ha eliminado la clave {0} a nombre de {1}.
+global.commands.api.key.revoke.not-found=No se ha podido encontrar la clave {0}.
+global.commands.api.key.generated=La clave se ha generado con éxito. Puedes verla con el comando /api key list.
+global.commands.api.key.list=Clave nº{0}: {1}
+global.commands.api.key.list.hover-text=Haz clic aquí para copiar la clave nº{0}.
+global.commands.api.key.list.no-keys=No hay ninguna llave registrada a nombre de {0}.
+global.commands.api.ban.success={0} ya no puede usar la API.
+global.commands.api.ban.already-banned={0} ya está baneado de la API.
+global.commands.api.unban.success={0} vuelve a tener acceso a la API.
+global.commands.api.unban.not-banned={0} no está baneado del uso de la API.
+global.commands.api.check={0} tiene {1} llave(s) registrada(s).
+global.commands.api.check.banned={0} está baneado del uso de la API.
+
+# Sin usar
+npcs.commands.purge=Los NPCs han sido purgados.
+npcs.commands.create.already-exists=El NPC {0} ya ha sido registrado.
+npcs.commands.create.success=Has registrado el NPC {0} ({1}) exitosamente.
+npcs.commands.delete.unknown=El NPC {0} no existe o ya ha sido eliminado anteriormente.
+npcs.commands.delete.success=El NPC {0} ha sido eliminado exitosamente.
+npcs.commands.respawn.success=Los datos de los NPC han sido recargados exitosamente.
+
+global.join-message=Presiona las teclas key.sneak y key.swapOffhand simultáneamente para abrir el menú de interacción.
