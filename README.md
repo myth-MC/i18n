@@ -1,15 +1,20 @@
 # mythmc-l10n
 Archivos de traducción usados en [mythMC](https://discord.mythmc.ovh).
 
-## Traducciones disponibles actualmente
+## Traducciones
 
-- es-ES: español (España) 100%
+|           | Idioma o dialecto    | Progreso | Disponible desde |
+|-----------|----------------------|----------|------------------|
+| esan      | andalûh (Andalucía)  | 0%       |                  |
+| es-AR     | español (Argentina)  | 0%       |                  |
+| es-CL     | español (Chile)      | 0%       |                  |
+| es-EC     | español (Ecuador)    | 0%       |                  |
+| es-ES     | español (España)     | 100%     | 1.0              |
+| es-MX     | español (México)     | 0%       |                  |
+| es-UY     | español (Uruguay)    | 0%       |                  |
 
-## Traducciones pendientes
+## Contribuyentes
 
-- esan: andalûh (Andalucía) 0%
-- es-AR: español (Argentina) 0%
-- es-CL: español (Chile) 0%
-- es-EC: español (Ecuador) 0%
-- es-MX: español (México) 0%
-- es-UY: español (Uruguay) 0%
+|                                       | Aportación                      |
+|---------------------------------------|---------------------------------|
+| [U8092](https://github.com/U8092)     | Traducción al español de España |
