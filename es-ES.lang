@@ -14,8 +14,10 @@ chat.hover.sender=Haz clic aquí para ver las estadísticas de {0}.
 chat.hover.local=Este es el canal {0}, que se usa para chatear con los jugadores de {1}.
 chat.hover.global=Este es el canal {0}, que se usa para hablar con todos los jugadores en línea.
 chat.hover.clan=Este es el canal del {0}, que se usa para hablar con todos los miembros de {1}.
+chat.hover.session=Este es el canal de la {0}, que se usa para hablar con todos los miembros de {1}.
 
 # Canales del chat
+#   {0} = nombre del canal
 chat.channel.switch=Ahora estás hablando en el canal {0}.
 
 # Mensajes privados
@@ -27,7 +29,19 @@ pm.hover.sender=Haz clic aquí para escribir un mensaje privado a {0}.
 pm.hover.recipient=Haz clic aquí para escribir un mensaje privado a {0}.
 pm.hover.description=Este es un mensaje privado que solo {0} y {1} podéis leer.
 
+# Sesión
+session.player-joined={0} se ha unido a la sesión.
+session.player-left={0} ha abandonado la sesión.
+session.player-kicked={0} ha sido expulsado de la sesión.
+session.invite-received={0} te ha invitado a unirte a su sesión de juego. Puedes hacerlo con /session join {0}.
+
+# Clan
+clan.player-joined={0} se ha unido al clan.
+clan.player-left={0} ha abandonado el clan.
+clan.player-kicked={0} ha sido expulsado del clan.
+
 # Notificaciones
+#   {0} = nº de horas
 global.notifications.playtime=¡Has acumulado {0} horas de juego!
 
 # Avisos
@@ -36,8 +50,9 @@ global.warnings.clan-is-full=El clan ha alcanzado el límite de miembros, no pod
 global.warnings.cannot-be-undone=Esta acción es irreversible.
 
 # Errores frecuentes
-global.errors.player-not-found=No se pudo encontrar a {0} en la base de datos.
+global.errors.player-not-found=No se pudo encontrar a {0}.
 global.errors.not-enough-permission=No tienes suficiente permiso.
+errors.player-not-specified=Debes especificar un jugador.
 
 # Errores (clan)
 global.errors.player-has-clan=Ya perteneces a un clan. Puedes abandonarlo con /clan leave.
@@ -51,6 +66,13 @@ global.errors.player-not-in-this-clan=El jugador {0} no pertenece al clan.
 global.errors.clan-tag-too-long=La etiqueta es demasiado larga.
 global.errors.clan-name-too-long=El nombre puede contener 16 caracteres como máximo.
 global.errors.player-is-already-leader=Ya eres líder.
+
+# Errores (sesión)
+global.errors.session.already-in-session=Ya formas parte de la sesión de {0}. Puedes abandonarla con /session leave.
+global.errors.session.not-in-session=No formas parte de ninguna sesión.
+global.errors.session.not-leader=Debes ser líder de la sesión.
+global.errors.session.not-invited=Para entrar a la sesión de {0} primero debe invitarte.
+global.errors.session.not-found=No se pudo encontrar la sesión de {0}.
 
 # Recompensas
 global.rewards.playtime=Has estado jugando por {0} minutos. Te hemos recompensado con {1} mitaritas.
@@ -70,11 +92,20 @@ global.commands.mytharites.remove.success=Se ha(n) restado {0} mitarita(s) a {1}
 global.commands.mytharites.check.self=Tienes un total de {0} mitarita(s).
 global.commands.mytharites.check.other={0} tiene un total de {1} mitarita(s).
 
+# Comandos (sesiones)
+commands.session.help=Las sesiones de juego son grupos temporales para chatear o jugar con tus amigos. Puedes crear una con /session create.
+commands.session.create.success=Has creado una sesión de juego. Invita a tus amigos con /session invite <nombre>.
+commands.session.delete.success=Has disuelto la sesión de juego.
+commands.session.invite.success=Has invitado a {0} a la sesión de juego.
+commands.session.join.success=Te has unido a la sesión de {0}. ¡Diles hola por el chat!
+commands.session.join.missing-name=Debes indicar el nombre de la sesión.
+commands.session.leave.success=Has abandonado la sesión de {0}.
+
 # Comandos (clanes)
 global.commands.clan.help=¿Necesitas ayuda con los comandos? ¡Únete a nuestro Discord con '/discord'!
 global.commands.clan.members=Los miembros de {0} son: {1}
 global.commands.clan.create.success=¡Enhorabuena, has creado {0}, tu propio clan! Puedes ver el código de invitación con '/clan stats'.
-global.commands.clan.join.success=Ahora formas parte del clan {0}. ¡Escribe con un . delante de tus mensajes y date a conocer al resto del clan!
+global.commands.clan.join.success=Ahora formas parte del clan {0}. ¡Escribe en el chat y date a conocer al resto del clan!
 global.commands.clan.resetCode.success=Puedes ver el nuevo código de invitación usando el comando '/clan stats'.
 global.commands.clan.kick.success=Has echado a {0} del clan. Recuerda que podrá volver a unirse si no reseteas el código de invitación.
 global.commands.clan.tag.success=Se ha cambiado la etiqueta del clan a {0}.
