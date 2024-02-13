@@ -34,6 +34,7 @@ session.player-joined={0} se ha unido a la sesión.
 session.player-left={0} ha abandonado la sesión.
 session.player-kicked={0} ha sido expulsado de la sesión.
 session.invite-received={0} te ha invitado a unirte a su sesión de juego. Puedes hacerlo con /session join {0}.
+session.dissolved=La sesión de {0} ha sido disuelta.
 
 # Clan
 clan.player-joined={0} se ha unido al clan.
