@@ -1,0 +1,307 @@
+# 
+# Running Sonar version 2.0.17 build 1030 (ef8abce) on Velocity
+# Need help or have questions? https://jonesdev.xyz/discord
+# https://github.com/jonesdevelopment/sonar
+# 
+
+# Placeholder for every '%prefix%' in this configuration file
+prefix: <b><yellow>Sonar</b> <gray>» <white>
+# Placeholder for every '%support-url%' in this configuration file
+support-url: https://jonesdev.xyz/discord/
+# Placeholder for every '%header%' in this configuration file
+header:
+  - <b><yellow>Sonar</b><reset>
+  - ''
+# Placeholder for every '%footer%' in this configuration file
+footer:
+  - <gray>Si crees que esto se trata de un error, contacta con un administrador.
+# Disconnect message that is shown when someone joins but there are too many online players with their IP address
+too-many-online-per-ip:
+  - '%header%'
+  - <red>Hay demasiados jugadores en línea con tu dirección IP.
+  - '%footer%'
+commands:
+  # Message that is shown when a player tries running /sonar without permission
+  no-permission: '%prefix%<red>No tienes suficiente permiso.'
+  # Message that is shown when someone uses a command incorrectly
+  incorrect-usage: '%prefix%<red>Uso: /sonar %usage%'
+  # Message that is shown when someone provides an invalid IP address (Invalid format)
+  invalid-ip-address: '%prefix%La dirección IP parece ser inválida.'
+  # Message that is shown when someone provides an illegal IP address (Local IP)
+  illegal-ip-address: '%prefix%La dirección IP que indicaste parece ser local o de
+    loopback.'
+  # Message that is shown when the console runs a command that is player-only
+  player-only: '%prefix%<red>Solo los jugadores pueden ejecutar este comando.'
+  # Message that is shown when a player runs a command that is console-only
+  console-only: '%prefix%<red>Por motivos de seguridad este comando solo se puede
+    ejecutar desde la consola.'
+  # Message that is shown when a player executes Sonar commands too quickly
+  cool-down: '%prefix%<red>Solo puedes ejecutar este comando cada 5 segundos.'
+  cool-down-left: '%prefix%<red>Por favor, espera otros <bold>%time-left% segundos<reset><red>.'
+  # Message that is shown when a player does not have permission to execute a certain subcommand
+  subcommand-no-permission: '%prefix%<red>No tienes suficiente permiso. <gray>(%permission%)'
+  # Translations for '/sonar'
+  main:
+    # Informational message that is shown above everything when running the main command
+    header:
+      - <yellow>Ejecutando <b>Sonar</b> %version% en %platform%.
+      - <gray><click:open_url:'https://github.com/jonesdevelopment/sonar'>(C) %copyright_year%
+        Jones Development and Sonar Contributors</click>
+      - ''
+      - <gray>¿Necesitas ayuda o tienes alguna pregunta?
+      - <white><click:open_url:'https://jonesdev.xyz/discord/'><hover:show_text:'(Clic
+        para abrir Discord)'>Abre un ticket en Discord </hover></click> <click:open_url:'https://github.com/jonesdevelopment/sonar/issues'><hover:show_text:'(Clic
+        para abrir GitHub)'>o abre un issue en GitHub.</hover>
+      - ''
+    # Formatting of the list of subcommands shown when running the main command
+    subcommands: '<click:suggest_command:''/sonar %subcommand% ''><hover:show_text:''<gray>Only
+      players: </gray>%only_players%<br><gray>Requiere consola: </gray>%require_console%<br><gray>Permiso:</gray><white>%permission%<br><gray>Aliases:
+      </gray>%aliases%''><dark_aqua>▪ <gray>/sonar %subcommand%  <white>%description%'
+  # Translations for '/sonar reload'
+  reload:
+    # Message that is shown when someone starts reloading Sonar
+    start: '%prefix%Recargando Sonar...'
+    # Message that is shown when Sonar has finished reloading
+    finish: '%prefix%<green>Recargado correctamente <gray>(%taken%ms)'
+  # Translations for '/sonar verbose'
+  verbose:
+    # Message that is shown when a player subscribes to Sonar verbose
+    subscribed: '%prefix%Ahora puedes ver la verbosa de Sonar.'
+    # Message that is shown when a player unsubscribes from Sonar verbose
+    unsubscribed: '%prefix%Ya no puedes ver la verbosa de Sonar.'
+  # Translations for '/sonar notify'
+  notify:
+    # Message that is shown when a player subscribes to Sonar attack notifications
+    subscribed: '%prefix%Ahora puedes ver las notificaciones de ataque de Sonar.'
+    # Message that is shown when a player unsubscribes from Sonar attack notifications
+    unsubscribed: '%prefix%Ya no puedes ver las notificaciones de ataque de Sonar.'
+  # Translations for '/sonar blacklist'
+  blacklist:
+    # Message that is shown when someone tries clearing the blacklist but is is empty
+    empty: '%prefix%La lista negra está vacía. Esto significa que no se ha borrado
+      ninguna dirección IP.'
+    # Message that is shown when someone clears the blacklist
+    cleared: '%prefix%Has eliminado un total de %removed% dirección(es) IP de la lista
+      negra.'
+    # Message that is shown when someone checks the size of the blacklist
+    size: '%prefix%La lista negra contiene %amount% dirección(es) IP.'
+    # Message that is shown when someone adds an IP address to the blacklist
+    added: '%prefix%Se ha agregado %ip% a la lista negra.'
+    # Message that is shown when someone adds an IP address to the blacklist that is verified
+    added-warning: '%prefix%<red>Advertencia: <white>%ip% está en la lista blanca.
+      Consida eliminar la IP de la lista de jugadores verificados para evitar potenciales
+      problemas.'
+    # Message that is shown when someone removes an IP address from the blacklist
+    removed: '%prefix%Has eliminado %ip% de la lista negra.'
+    # Message that is shown when someone adds an IP address to the blacklist but it is already blacklisted
+    duplicate-ip: '%prefix%La dirección IP que indicaste ya está en la lista negra.'
+    # Message that is shown when someone removes an IP address from the blacklist but it is not blacklisted
+    ip-not-found: '%prefix%La dirección IP que indicaste no está en la lista negra.'
+  # Translations for '/sonar verified'
+  verified:
+    # Message that is shown when someone tries clearing the list of verified players but is is empty
+    empty: '%prefix%La lista de jugadores verificados está vacía. Por lo tanto, no
+      se ha desverificado a ningún jugador.'
+    # Message that is shown when someone clears the list of verified players
+    cleared: '%prefix%Has desverificado a un total de %removed% jugador(es) único(s).'
+    # Message that is shown when someone checks the size of the list of verified players
+    size: '%prefix%Actualmente hay un total de %amount% jugador(es) único(s) verificados.'
+    # Message that is shown when someone un-verifies an IP address
+    removed: '%prefix%Has desverificado la dirección IP %ip%.'
+    # Message that is shown when someone un-verifies an IP address but it is not verified
+    ip-not-found: '%prefix%La dirección IP que indicaste no está verificada.'
+    # Message that is shown when someone tries un-verifying the same IP address twice (double operation)
+    blocked: '%prefix%Por favor, espera a que se complete la operación actual.'
+  # Translations for '/sonar statistics'
+  statistics:
+    # Informational message that is shown above everything when viewing the statistics
+    header: '%prefix%Mostrando estadísticas de tipo %type% para esta sesión:'
+    # Message that is shown when a player tries viewing an unknown statistic
+    unknown-type: '%prefix%<red>Tipo desconocido. Estadísticas disponibles: <gray>%statistics%'
+    # Format of the general statistics message
+    general:
+      - ' <dark_aqua>▪ <gray>Direcciones IP verificadas: <white>%verified%'
+      - ' <dark_aqua>▪ <gray>Direcciones IP en verificación: <white>%verifying%'
+      - ' <dark_aqua>▪ <gray>Direcciones IP en lista negra: <white>%blacklisted%'
+      - ' <dark_aqua>▪ <gray>Inicios de sesión en cola: <white>%queued%'
+      - ' <dark_aqua>▪ <gray>Ingresos totales (no únicos): <white>%total_joins%'
+      - ' <dark_aqua>▪ <gray>Intentos de verificación: <white>%total_attempts%'
+      - ' <dark_aqua>▪ <gray>Verificaciones fallidas: <white>%total_failed%'
+      - ' <dark_aqua>▪ <gray>Tiempo de actividad: <white>%uptime%'
+    # Format of the CPU statistics message
+    cpu:
+      - ' <dark_aqua>▪ <gray>Uso de la CPU (proceso): <white>%process_cpu%%'
+      - ' <dark_aqua>▪ <gray>Uso de la CPU (sistema): <white>%system_cpu%%'
+      - ' <dark_aqua>▪ <gray>Uso por núcleo de la CPU (proceso): <white>%average_process_cpu%%'
+      - ' <dark_aqua>▪ <gray>Uso por núcleo de la CPU (sistema): <white>%average_system_cpu%%'
+      - ' <dark_aqua>▪ <gray>Carga del sistema promedio: <white>%load_average%%'
+      - ' <dark_aqua>▪ <gray>Cantidad total de VCores: <white>%virtual_cores%'
+    # Format of the memory statistics message
+    memory:
+      - ' <dark_aqua>▪ <gray>Memoria libre: <white>%free_memory%'
+      - ' <dark_aqua>▪ <gray>Memoria usada: <white>%used_memory%'
+      - ' <dark_aqua>▪ <gray>Memoria máxima: <white>%max_memory%'
+      - ' <dark_aqua>▪ <gray>Memoria destinada: <white>%total_memory%'
+    # Format of the network statistics message
+    network:
+      - ' <dark_aqua>▪ <gray>Ancho de banda en uso (ingresante): <white>%incoming%'
+      - ' <dark_aqua>▪ <gray>Ancho de banda en uso (saliente): <white>%outgoing%'
+      - ' <dark_aqua>▪ <gray>Ancho de banda total utilizado (ingresante): <white>%ttl_incoming%'
+      - ' <dark_aqua>▪ <gray>Ancho de banda total utilizado (saliente): <white>%ttl_outgoing%'
+# Translations for all messages during the verification process
+verification:
+  # Translations for all debug messages during the verification
+  logs:
+    # Message that is logged to console whenever a new player joins the server
+    connection: '%name%%ip% (%protocol%) se ha conectado.'
+    # Message that is logged to console whenever a player fails verification
+    failed: '%ip% (%protocol%) ha fallado el chequeo de bot por: %reason%'
+    # Message that is logged to console whenever a player is blacklisted
+    blacklisted: '%ip% (%protocol%) ha entrado en al lista negra por demasiados intentos
+      fallidos.'
+    # Message that is logged to console whenever a player is verified
+    successful: '%name% se ha verificado correctamente (%time%s!).'
+  # Message that is shown to the player when they are being checked for valid gravity
+  welcome: '%prefix%<gray>Por favor, espera mientras verificamos tu cuenta...'
+  captcha:
+    # Message that is shown to the player when they have to enter the answer to the captcha
+    enter-code: '%prefix%<green>Por favor, introduce en el chat el código del mapa.'
+    # Timer that is shown to the player when they have to enter the answer to the captcha
+    # (Set this to '' to disable the action bar message)
+    action-bar: '%prefix%<green>Tienes %time-left% segundos para introducir el código'
+    # Message that is shown to the player when they enter the wrong answer in chat
+    incorrect: '%prefix%<red>El código es incorrecto. Por favor, inténtalo de nuevo.'
+  # Disconnect message that is shown when someone joins while the captcha hasn't been prepared yet
+  currently-preparing:
+    - '%header%'
+    - <yellow>Tus datos aún no se han preparado.
+    - <gray>Espera unos segundos antes de ingresar de nuevo.
+    - '%footer%'
+  # Disconnect message that is shown when too many players are verifying at the same time
+  too-many-players:
+    - '%header%'
+    - <gold>Demasiados jugadores están intentando entrar a la vez.
+    - <gray>Espera unos segundos antes de ingresar de nuevo.
+    - '%footer%'
+  # Disconnect message that is shown when someone rejoins too fast during verification
+  too-fast-reconnect:
+    - '%header%'
+    - <gold>Te has reconectado demasiado en muy poco tiempo.
+    - <gray>Espera unos segundos antes de ingresar de nuevo.
+    - '%footer%'
+  # Disconnect message that is shown when someone joins but is already verifying
+  already-verifying:
+    - '%header%'
+    - <red>Tu dirección IP está siendo verificada.
+    - <red>Espera unos segundos antes de ingresar de nuevo.
+    - '%footer%'
+  # Disconnect message that is shown when someone joins but is already queued for verification
+  already-queued:
+    - '%header%'
+    - <red>Tu dirección IP está en la cola para la verificación.
+    - <red>Espera unos segundos antes de ingresar de nuevo.
+    - '%footer%'
+  # Disconnect message that is shown when someone joins but is temporarily blacklisted
+  blacklisted:
+    - '%header%'
+    - <red>Se te ha denegado la entrada al servidor temporalmente.
+    - <red>Espera unos segundos antes de ingresar de nuevo.
+    - <gold>¿Falso positivo? <gray>%support-url%
+    - '%footer%'
+  # Disconnect message that is shown when someone joins with an invalid username
+  invalid-username:
+    - '%header%'
+    - <red>Tu nombre de usuario contiene caracteres inválidios.
+    - '%footer%'
+  # Disconnect message that is shown when someone joins with a too new or too old version
+  invalid-protocol:
+    - '%header%'
+    - <red>Tu versión es demasiado reciente o demasiado antigua.
+    - '%footer%'
+  # Disconnect message that is shown when someone joins with a blacklisted version
+  blacklisted-protocol:
+    - '%header%'
+    - <red>Estás usando una versión que no permitimos actualmente.
+    - <gold>¿Necesitas una mano? <gray>%support-url%
+    - '%footer%'
+  # Disconnect message that is shown when someone tries verifying with an account that is online
+  already-online:
+    - '%header%'
+    - <red>Ya hay alguien en línea con tu nombre de usuario.
+    - <gray>Espera unos segundos antes de ingresar de nuevo.
+    - <gray>Si esto sigue ocurriendo, reinicia el juego o contáctanos.
+    - '%footer%'
+  # Disconnect message that is shown when someone verifies successfully
+  success:
+    - '%header%'
+    - <green>Tu cuenta ha sido verificada correctamente.
+    - <white>Ya puedes ingresar al servidor sin problema.
+  # Disconnect message that is shown when someone fails verification
+  failed:
+    - '%header%'
+    - <red>No se te ha podido verificar.
+    - <gray>Espera unos segundos antes de ingresar de nuevo.
+    - <gold>¿Necesitas una mano? <gray>%support-url%
+    - '%footer%'
+# Translations for Sonar's actionbar verbose messages
+verbose:
+  layout:
+    # Layout for Sonar's actionbar verbose
+    # Placeholders:
+    # - '%queued%' Number of queued connections
+    # - '%verifying%' Number of verifying connections
+    # - '%blacklisted%' Number of blacklisted IP addresses
+    # - '%total-joins%' Number of total attempted joins
+    # - '%verify-total%' Number of total verification attempts
+    # - '%verify-success%' Number of verified IP addresses
+    # - '%verify-failed%' Number of failed verifications
+    # - '%logins-per-second%' Number of logins per second
+    # - '%connections-per-second%' Number of connections per second
+    # - '%attack-duration%' Duration of the current attack
+    # - '%incoming-traffic%' Incoming bandwidth usage per second
+    # - '%outgoing-traffic%' Outgoing bandwidth usage per second
+    # - '%incoming-traffic-ttl%' Total incoming bandwidth usage
+    # - '%outgoing-traffic-ttl%' Total outgoing bandwidth usage
+    # - '%used-memory%' Amount of used memory of the process
+    # - '%total-memory%' Amount of total memory of the process
+    # - '%max-memory%' Amount of max memory of the process
+    # - '%free-memory%' Amount of free memory of the process
+    # - '%animation%' Customizable animated symbol
+    # Translations for Sonar's normal verbose output
+    normal: '%prefix%<gray>CPS <white>%connections-per-second% <dark_aqua>╺ <gray>Inicios/s
+      <white>%logins-per-second% <dark_aqua>╺ <gray>Verificando <white>%verifying%
+      <dark_aqua>| <green>⬆ <white>%outgoing-traffic%/s <red>⬇ <white>%incoming-traffic%/s  <green><bold>%animation%<reset>'
+    # Layout for Sonar's actionbar verbose during an attack
+    attack: '%prefix%<gray>CPS <white>%connections-per-second% <dark_aqua>╺ <gray>Inicios/s
+      <white>%logins-per-second% <dark_aqua>╺ <gray>Cola <white>%queued% <dark_aqua>╺
+      <gray>Verificando <white>%verifying% <dark_aqua>╺ <gray>Duración <white>%attack-duration%
+      <dark_aqua>| <green>⬆ <white>%outgoing-traffic%/s <red>⬇ <white>%incoming-traffic%/s  <green><bold>%animation%<reset>'
+  # Animation for the action bar
+  # Alternatives:
+  # - ▙, ▛, ▜, ▟
+  # - ⬈, ⬊, ⬋, ⬉
+  animation:
+    - ◜
+    - ◝
+    - ◞
+    - ◟
+# Translations for Sonar's attack notification messages
+notifications:
+  # Layout for Sonar's attack notification title
+  title: <yellow><b>Sonar<reset>
+  # Layout for Sonar's attack notification subtitle
+  subtitle: <gray>Se ha detectado un ataque de bots
+  # Layout for Sonar's attack notification in chat
+  chat:
+    - ''
+    - <yellow><b>Sonar<reset>
+    - ''
+    - <gray>Se ha detectado un ataque de bots.
+    - ' <dark_aqua>▪ <gray>Inicios por segundo: <white>%logins-per-second%'
+    - ' <dark_aqua>▪ <gray>Verificando a: <white>%verifying%'
+    - ' <dark_aqua>▪ <gray>En cola: <white>%queued%'
+    - ''
+    - <gray>Consulta más información con <white><click:run_command:'/sonar verbose'><hover:show_text:'(Clic
+      para ejecutar)'>/sonar verbose</hover </click><gray> o <white><click:run_command:'/sonar
+      stats'><hover:show_text:'(Clic para ejecutar)'>/sonar stats</hover></click><gray>.
+    - ''
