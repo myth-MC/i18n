@@ -68,11 +68,11 @@ global.errors.clan-name-too-long=El nombre puede contener 16 caracteres como má
 global.errors.player-is-already-leader=Ya eres líder.
 
 # Errores (sesión)
-global.errors.session.already-in-session=Ya formas parte de la sesión de {0}. Puedes abandonarla con /session leave.
-global.errors.session.not-in-session=No formas parte de ninguna sesión.
-global.errors.session.not-leader=Debes ser líder de la sesión.
-global.errors.session.not-invited=Para entrar a la sesión de {0} primero debe invitarte.
-global.errors.session.not-found=No se pudo encontrar la sesión de {0}.
+errors.session.already-in-session=Ya formas parte de la sesión de {0}. Puedes abandonarla con /session leave.
+errors.session.not-in-session=No formas parte de ninguna sesión.
+errors.session.not-leader=Debes ser líder de la sesión.
+errors.session.not-invited=Para entrar a la sesión de {0} primero debe invitarte.
+errors.session.not-found=No se pudo encontrar la sesión de {0}.
 
 # Recompensas
 global.rewards.playtime=Has estado jugando por {0} minutos. Te hemos recompensado con {1} mitaritas.
@@ -100,6 +100,7 @@ commands.session.invite.success=Has invitado a {0} a la sesión de juego.
 commands.session.join.success=Te has unido a la sesión de {0}. ¡Diles hola por el chat!
 commands.session.join.missing-name=Debes indicar el nombre de la sesión.
 commands.session.leave.success=Has abandonado la sesión de {0}.
+commands.session.leave.cannot-be-leader=Para salir de la sesión primero deberás disolverla con /session delete.
 
 # Comandos (clanes)
 global.commands.clan.help=¿Necesitas ayuda con los comandos? ¡Únete a nuestro Discord con '/discord'!
