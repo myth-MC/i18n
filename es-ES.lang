@@ -101,6 +101,7 @@ commands.session.help=Las sesiones de juego son grupos temporales para chatear o
 commands.session.create.success=Has creado una sesión de juego. Invita a tus amigos con /session invite <nombre>.
 commands.session.delete.success=Has disuelto la sesión de juego.
 commands.session.invite.success=Has invitado a {0} a la sesión de juego.
+commands.session.invite.cannot-invite-yourself=No te puedes invitar a tu propia sesión de juego.
 commands.session.join.success=Te has unido a la sesión de {0}. ¡Diles hola por el chat!
 commands.session.join.missing-name=Debes indicar el nombre de la sesión.
 commands.session.join.already-in-session=Ya estás en la sesión de {0}.
