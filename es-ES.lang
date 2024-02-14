@@ -6,6 +6,9 @@
 #   * Los mensajes sin usar están por si fueran necesarios en el futuro.
 #
 
+# NO MODIFICAR
+l10n.version=0.0.1
+
 # Chat
 #   {0} = nombre del jugador
 #   {1} = mensaje
