@@ -7,7 +7,7 @@
 #
 
 # NO MODIFICAR
-l10n.target=0.0.24
+l10n.target-version=0.0.24
 
 # Chat
 #   {0} = nombre del jugador
