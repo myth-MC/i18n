@@ -103,6 +103,7 @@ commands.session.delete.success=Has disuelto la sesión de juego.
 commands.session.invite.success=Has invitado a {0} a la sesión de juego.
 commands.session.join.success=Te has unido a la sesión de {0}. ¡Diles hola por el chat!
 commands.session.join.missing-name=Debes indicar el nombre de la sesión.
+commands.session.join.already-in-session=Ya estás en la sesión de {0}.
 commands.session.leave.success=Has abandonado la sesión de {0}.
 commands.session.leave.cannot-be-leader=Para salir de la sesión primero deberás disolverla con /session delete.
 
