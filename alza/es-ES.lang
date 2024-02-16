@@ -1,0 +1,17 @@
+#
+# Traducción al español de España del proyecto alza
+# Autores/as: U8092
+# Contacto: uisl8092@gmail.com o @u8092 en Discord
+# Notas:
+#
+
+# Advertencias
+warnings.experimental-feature=Esta acción no está suficientemente probada como para ser usada en un entorno de producción.
+
+# Comandos (debug)
+commands.extensions=Extensiones ({0}): {1}
+commands.serverinfo=Protocolo {0} ({1} - {2}). Esta instancia lleva {3} días, {4} horas, {5} minutos y {6} segundos en marcha.
+
+# Comandos (administradores)
+commands.reload.success=El archivo de configuración ha sido recargado.
+commands.save.success=Las instancias en caché se han guardado al almacenamiento local.
