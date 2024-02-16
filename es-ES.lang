@@ -1,5 +1,5 @@
 #
-# Traducción al español de España del proyecto alza
+# Traducción al español de España del proyecto myth-proxy
 # Autores/as: U8092
 # Contacto: uisl8092@gmail.com o @u8092 en Discord
 # Notas:
@@ -49,7 +49,6 @@ clan.player-kicked={0} ha sido expulsado del clan.
 global.notifications.playtime=¡Has acumulado {0} horas de juego!
 
 # Avisos
-global.warnings.experimental-feature=Esta acción no está suficientemente probada como para ser usada en un entorno de producción.
 global.warnings.clan-is-full=El clan ha alcanzado el límite de miembros, no podrá unirse nadie a menos que algún miembro lo abandone.
 global.warnings.cannot-be-undone=Esta acción es irreversible.
 
@@ -81,14 +80,6 @@ errors.session.not-found=No se pudo encontrar la sesión de {0}.
 # Recompensas
 global.rewards.playtime=Has estado jugando por {0} minutos. Te hemos recompensado con {1} mitaritas.
 global.rewards.playtime.referral={0}, la persona que te invitó, ha recibido también {1} mitaritas. ¡Invita a tus amigos y gana recompensas!
-
-# Comandos de administración
-global.commands.extensions=Extensiones ({0}): {1}
-global.commands.reload.success=El archivo de configuración ha sido recargado.
-global.commands.save.success=Las instancias en caché se han guardado al almacenamiento local.
-
-# Debug para jugadores
-global.commands.serverinfo=Protocolo {0} ({1} - {2}). Esta instancia lleva {3} días, {4} horas, {5} minutos y {6} segundos en marcha.
 
 # Comandos (economía)
 global.commands.mytharites.add.success=Se ha(n) sumado {0} mitarita(s) a {1}.
