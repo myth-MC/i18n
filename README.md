@@ -1,5 +1,5 @@
 # mythmc-l10n
-Archivos de traducción usados en [mythMC](https://discord.mythmc.ovh). También proveemos algunas traducciones de trabajos externos bajo el directorio "otros".
+Archivos de traducción usados en [mythMC](https://discord.mythmc.ovh). También proveemos algunas traducciones de trabajos externos que puedes encontrar en el directorio "otros".
 
 ## Traducciones
 
