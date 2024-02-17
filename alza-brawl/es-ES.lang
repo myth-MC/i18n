@@ -1,0 +1,11 @@
+#
+# Traducción al español de España del proyecto alza-brawl
+# Autores/as: U8092
+# Contacto: uisl8092@gmail.com o @u8092 en Discord
+# Notas:
+#
+
+# Rachas
+streak.top=Estás en el puesto nº{0}. ¡Ánimo!
+streak.reminder=Llevas una racha de {0} asesinatos.
+streak.lost=Has perdido tu racha de {0} asesinatos...
