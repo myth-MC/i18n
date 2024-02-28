@@ -132,6 +132,7 @@ commands.playtime=Llevas un total de {0} día(s), {1} hora(s), {2} minuto(s) y {
 commands.info.firstJoin= ... entró por primera vez el {0}.
 commands.info.lastJoin= ... entró por última vez el {0}.
 commands.info.playTime= ... ha jugado por {0} día(s), {1} hora(s), {2} minuto(s) y {3} segundo(s).
+commands.info.prestige= ... tiene un nivel de prestigio de {0} puntos.
 commands.info.kdr= ... tiene un KDR de {0} ({1} asesinatos y {2} muertes)
 commands.info.clan= ... pertenece al clan {0}.
 
